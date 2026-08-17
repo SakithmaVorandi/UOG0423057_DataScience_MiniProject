@@ -32,7 +32,6 @@ class StudentPrediction(Base):
     # --------------------------------------------------------
     # Student information
     # --------------------------------------------------------
-
     gender = Column(
         String,
         nullable=False
@@ -83,11 +82,9 @@ class StudentPrediction(Base):
         nullable=False
     )
 
-
     # --------------------------------------------------------
     # Date and time of prediction
     # --------------------------------------------------------
-
     created_at = Column(
         DateTime,
         default=datetime.utcnow
