@@ -101,7 +101,6 @@ form.addEventListener(
                     result.probabilities.Pass * 100
                 ).toFixed(2) + "%";
 
-
             document.getElementById(
                 "improvementProbability"
             ).textContent =
