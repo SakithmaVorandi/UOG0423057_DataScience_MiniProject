@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Predictor</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Performance Predictor</h1>
+
+        <p class="description">
+            Enter the student's information to predict
+            mathematics performance.
+        </p>
+
+
+        <!-- =================================================
+             STUDENT INPUT FORM
+        ================================================== -->
+
+        <form id="predictionForm">
+
+
+            <!-- Gender -->
+
+            <label for="gender">
+                Gender
+            </label>
+
+            <select id="gender" required>
+
+                <option value="">
+                    Select gender
+                </option>
+
+                <option value="female">
+                    Female
+                </option>
+
+                <option value="male">
+                    Male
+                </option>
+
+            </select>
+
+
+            <!-- Race / Ethnicity -->
+
+            <label for="race_ethnicity">
+                Race / Ethnicity
+            </label>
+
+            <select id="race_ethnicity" required>
+
+                <option value="">
+                    Select group
+                </option>
+
+                <option value="group A">
+                    Group A
+                </option>
+
+                <option value="group B">
+                    Group B
+                </option>
+
+                <option value="group C">
+                    Group C
+                </option>
+
+                <option value="group D">
+                    Group D
+                </option>
+
+                <option value="group E">
+                    Group E
+                </option>
+
+            </select>
+
+
+            <!-- Parental Education -->
+
+            <label for="parental_education">
+                Parental Level of Education
+            </label>
+
+            <select id="parental_education" required>
+
+                <option value="">
+                    Select education level
+                </option>
+
+                <option value="some high school">
+                    Some High School
+                </option>
+
+                <option value="high school">
+                    High School
+                </option>
+
+                <option value="some college">
+                    Some College
+                </option>
+
+                <option value="associate's degree">
+                    Associate's Degree
+                </option>
+
+                <option value="bachelor's degree">
+                    Bachelor's Degree
+                </option>
+
+                <option value="master's degree">
+                    Master's Degree
+                </option>
+
+            </select>
+
+
+            <!-- Lunch -->
+
+            <label for="lunch">
+                Lunch
+            </label>
+
+            <select id="lunch" required>
+
+                <option value="">
+                    Select lunch type
+                </option>
+
+                <option value="standard">
+                    Standard
+                </option>
+
+                <option value="free/reduced">
+                    Free / Reduced
+                </option>
+
+            </select>
+
+
+            <!-- Test Preparation -->
+
+            <label for="test_preparation">
+                Test Preparation Course
+            </label>
+
+            <select id="test_preparation" required>
+
+                <option value="">
+                    Select option
+                </option>
+
+                <option value="completed">
+                    Completed
+                </option>
+
+                <option value="none">
+                    None
+                </option>
+
+            </select>
+
+
+            <!-- Predict Button -->
+
+            <button type="submit">
+                Predict Performance
+            </button>
+
+        </form>
+
+
+        <!-- =================================================
+             RESULT SECTION
+        ================================================== -->
+
+        <div id="result"
+             class="result hidden">
+
+            <h2>Prediction Result</h2>
+
+            <p>
+                <strong>Performance:</strong>
+
+                <span id="prediction"></span>
+            </p>
+
+            <p>
+                <strong>Pass Probability:</strong>
+
+                <span id="passProbability"></span>
+            </p>
+
+            <p>
+                <strong>Needs Improvement Probability:</strong>
+
+                <span id="improvementProbability"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
